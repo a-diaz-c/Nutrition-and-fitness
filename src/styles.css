@@ -1,1 +1,282 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/******************************************
+  General Styles
+******************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+/******************************************
+  General Class
+******************************************/
+.tamanio-logo {
+  width: 100px;
+  height: 60px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.link-active {
+  color: rgb(166, 211, 55) !important;
+}
+
+.max-width {
+  max-width: 1400px;
+}
+
+/******************************************
+  Background
+******************************************/
+.bg-gray {
+  background-color: rgb(247, 247, 247);
+}
+
+.bg-shadow {
+  background-color: #2a3132;
+}
+
+/*****************************************
+  Margin
+*****************************************/
+.m-left-5 {
+  margin-left: 5px;
+}
+
+.m-right-5 {
+  margin-right: 5px;
+}
+
+/******************************************
+  Header
+******************************************/
+#header {
+  position: relative;
+  height: 60px;
+}
+#header nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0 0 12px #ccc;
+}
+
+#header nav a {
+  color: #000;
+  transition: color 0.2s;
+}
+
+#header nav a:hover {
+  color: rgb(166, 211, 55);
+  text-decoration: none;
+}
+
+#header nav > div:nth-child(2) ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#header nav > div:nth-child(2) ul li {
+  padding: 8px;
+}
+
+#header nav > div:nth-child(2) ul li span {
+  padding-right: 5px;
+}
+
+#header nav > div:last-child {
+  display: none;
+}
+
+/*************************************************
+  Section
+*************************************************/
+#cv {
+  width: 65%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+#cv > div:first-child {
+  background-color: #414b5a;
+  color: #fff;
+  padding: 6px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#cv > div:last-child {
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+#cv > div:last-child img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*************************************************
+  Footer
+*************************************************/
+#footer > div:last-child {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+/******************************************
+  Media queries
+******************************************/
+@media screen and (max-width: 1024px) {
+  /******************************************
+    Header
+  ******************************************/
+  #header nav {
+    font-size: 20px;
+  }
+
+  #header nav > div:last-child {
+    display: block;
+  }
+
+  #header nav > div:last-child {
+    display: flex;
+    align-items: center;
+  }
+
+  #header nav > div:last-child div > a:first-child span {
+    margin-right: 25px;
+  }
+
+  #header nav > div:last-child div > a:last-child span {
+    padding: 0px 6px 0px 6px;
+  }
+
+  #header nav > div:nth-child(2) {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 100%;
+    z-index: 90;
+  }
+
+  #header nav > div:nth-child(2) ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header nav > div:nth-child(2) ul li {
+    padding: 15px;
+  }
+
+  /*************************************************
+    Section
+  *************************************************/
+  #cv {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*************************************************
+    Section
+  *************************************************/
+  #cv {
+    width: 100%;
+  }
+}
+
+/*************************************************
+  animaciones
+*************************************************/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.mostrarMenu {
+  animation-duration: 0.8s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-name: mostrarMenu;
+}
+
+.ocultarMenu {
+  animation-duration: 0.8s;
+  animation-direction: normal;
+  animation-name: ocultarMenu;
+}
+
+@keyframes mostrarMenu {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes ocultarMenu {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
