@@ -124,31 +124,6 @@ a {
 /*************************************************
   Section
 *************************************************/
-#cv {
-  width: 65%;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  margin: 0 auto;
-}
-
-#cv > div:first-child {
-  background-color: #414b5a;
-  color: #fff;
-  padding: 6px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#cv > div:last-child {
-  text-align: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-#cv > div:last-child img {
-  max-width: 100%;
-  height: auto;
-}
 
 /*************************************************
   Footer
