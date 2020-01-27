@@ -10,6 +10,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 280px;
+}
+
 a {
   color: #000;
 }
@@ -122,12 +131,21 @@ a {
 }
 
 /*************************************************
-  Section
-*************************************************/
-
-/*************************************************
   Footer
 *************************************************/
+#section {
+  position: relative;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 #footer > div:last-child {
   color: #fff;
   display: flex;
