@@ -27,7 +27,7 @@ a {
 }
 
 .link-active {
-  color: rgb(166, 211, 55) !important;
+  color: #82bf40 !important;
 }
 
 .max-width {
@@ -46,7 +46,7 @@ a {
 }
 
 .bg-green {
-  background-color: rgb(134, 192, 1);
+  background-color: #82bf40;
 }
 
 /*****************************************
@@ -98,7 +98,7 @@ a {
 }
 
 #header nav a:hover {
-  color: rgb(166, 211, 55);
+  color: #82bf40;
   text-decoration: none;
 }
 
