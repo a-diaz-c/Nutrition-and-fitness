@@ -5,14 +5,15 @@ import { NgModule } from "@angular/core";
 import { APP_ROUTES } from "./app.route";
 
 // modules
-import { ComponentsModule } from "./components/components.module";
+import { PagesModule } from "./pages/pages.module";
 
+// components
 import { AppComponent } from "./app.component";
 import { NofoundpageComponent } from "./404/nofoundpage/nofoundpage.component";
 
 @NgModule({
   declarations: [AppComponent, NofoundpageComponent],
-  imports: [BrowserModule, APP_ROUTES, ComponentsModule],
+  imports: [BrowserModule, APP_ROUTES, PagesModule],
   providers: [],
   bootstrap: [AppComponent]
 })

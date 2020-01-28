@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 
 /******************************************
   General Styles
@@ -8,15 +9,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-html {
-  min-height: 100%;
-  position: relative;
-}
-
-body {
-  margin-bottom: 280px;
 }
 
 a {
@@ -43,6 +35,18 @@ a {
   max-width: 1400px;
 }
 
+.font-google {
+  font-family: "Permanent Marker", cursive;
+}
+
+.f-size-2rem {
+  font-size: 2rem;
+}
+
+.b-radius-4 {
+  border-radius: 4px;
+}
+
 /******************************************
   Background
 ******************************************/
@@ -65,7 +69,7 @@ a {
   color: #fff;
 }
 
-.c-green {
+.c-blue {
   color: rgb(69, 144, 197);
 }
 
@@ -82,6 +86,10 @@ a {
 
 .m-top-20 {
   margin-top: 20px;
+}
+
+.m-top-30 {
+  margin-top: 30px;
 }
 
 /******************************************
@@ -133,14 +141,7 @@ a {
 /*************************************************
   Footer
 *************************************************/
-#section {
-  position: relative;
-}
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -232,22 +233,6 @@ a {
 
   #header nav > div:nth-child(2) ul li {
     padding: 15px;
-  }
-
-  /*************************************************
-    Section
-  *************************************************/
-  #cv {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /*************************************************
-    Section
-  *************************************************/
-  #cv {
-    width: 100%;
   }
 }
 

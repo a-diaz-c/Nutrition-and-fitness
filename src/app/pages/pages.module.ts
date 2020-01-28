@@ -2,28 +2,28 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 // routes
-import { COMPONENTS_ROUTES } from "./components.route";
+import { PAGES_ROUTES } from "./pages.route";
 
-import { ComponentsComponent } from "./components.component";
+// modules
+import { SharedModule } from "../shared/shared.module";
+
+// components
+import { PagesComponent } from "./pages.component";
 import { InicioComponent } from "./inicio/inicio.component";
 import { InstalacionesComponent } from "./instalaciones/instalaciones.component";
 import { ConsultorioComponent } from "./consultorio/consultorio.component";
 import { CurriculumComponent } from "./curriculum/curriculum.component";
 import { GimnasioComponent } from "./gimnasio/gimnasio.component";
-import { HeaderComponent } from "./header/header.component";
-import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
   declarations: [
-    ComponentsComponent,
+    PagesComponent,
     InicioComponent,
     InstalacionesComponent,
     ConsultorioComponent,
     CurriculumComponent,
-    GimnasioComponent,
-    HeaderComponent,
-    FooterComponent
+    GimnasioComponent
   ],
-  imports: [BrowserModule, COMPONENTS_ROUTES]
+  imports: [BrowserModule, PAGES_ROUTES, SharedModule]
 })
-export class ComponentsModule {}
+export class PagesModule {}
